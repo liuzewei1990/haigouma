@@ -1,0 +1,99 @@
+
+/*多分辨率设定rem设定*/
+html { font-size : 20px; }
+@media only screen and (max-width: 310px) and (min-width: 300px) {html { font-size: 20px !important; }}
+@media only screen and (max-width: 320px) and (min-width: 310px) {html { font-size: 20px !important; }}
+/*Note3*/
+@media only screen and (min-width: 360px) {html { font-size: 22px !important; }}
+/*iPhone6*/
+@media only screen and (min-width: 376px) {html { font-size: 23px !important; }}
+/*iPhone6 plus*/
+@media only screen and (min-width: 414px) {html { font-size: 24px !important; }}
+/*big Resolution*/
+@media only screen and (min-width: 641px) {html { font-size: 25px !important; }}
+/*公共样式*/
+html *{ -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-text-size-adjust: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; }
+img { vertical-align: top; border: 0; }
+input, textarea { -webkit-user-select: text; -ms-user-select: text; user-select: text; -webkit-appearance: none; }
+input:focus, select:focus, textarea:focus, button:focus { outline: 0; }
+input[type="text"], input[type="password"], input[type="search"], input[type="tel"], input[type="number"], input[type="email"], input[type="url"], textarea { -webkit-appearance: none; -webkit-border-radius: 0; border-radius: 0; }
+input[type="number"]::-webkit-inner-spin-button {
+-webkit-appearance:none;
+}
+input[type="checkbox"] { border: 0; }
+/*iphone手机的input的样式问题*/
+input, button { -webkit-appearance: none; }
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+}
+table { border-collapse: collapse; border-spacing: 0 }
+a { text-decoration: none; -webkit-touch-callout: none; }
+em, i { font-style: normal; }
+ul { list-style: none; margin: 0px; padding: 0px; }
+li { list-style: none; }
+html, body { height: auto; font-family:'sans-serif', "Microsoft YaHei", "微软雅黑", "Tahoma", "Helvetica"; -webkit-font-smoothing: antialiased; font-style: normal; }
+html { font-size: 14px; color: #666 }
+a.react, label.react { display: block; color: inherit; height: 100%; }
+/* a.react{display: -webkit-box !important;display: box !important;position: relative;} */
+.space { display: inline-block; width: 12px; }
+.single-line { display:block;position: relative;-webkit-box-flex: 1;box-flex: 1; overflow: hidden;color: #fff; }
+/*css初始值*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { margin: 0; padding: 0; border: 0; outline: none;}
+body { margin: 0 auto; font-size: 14px;background-color:#f2f2f2;  color: #999; min-width: 320px; max-width:640px; }
+img { border: 0px }
+a { color: #999; text-decoration: none;  blr: expression(this.onFocus=this.blur()); outline: none;/*-webkit-tap-highlight-color: rgba(0, 0, 0, 0);*/}
+a:active { star: expression_r(this.onFocus=this.blur());} 
+a:hover { font-size: 14px; color: #f23030; text-decoration: none;cursor: pointer}
+a:focus, input[type=button] ,input[type=submit] { outline: none; } 
+input[type=button] ,input[type=submit]{ -webkit-appearance: none;}
+input[type=number] { -moz-appearance: textfield; }
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none;}
+.main { width: 100%; overflow: hidden; margin: 0; padding: 0; }
+table { border-collapse: collapse; border-spacing: 0; empty-cells: show; font-size: 14px }
+fieldset, img { border: 0 }
+cite, em, s, i, b { font-style: normal }
+a, input, textarea { text-decoration: none; outline: 0 }
+li, img, label, input { vertical-align: middle }
+var { font-style: normal }
+ins { text-decoration: none }
+
+
+/*input 字体颜色*/
+input::-webkit-input-placeholder {color:#999;}
+input:-moz-placeholder {color:#999;}
+
+/*清除浮动*/
+.clearfix:after { clear: both; content: " "; display: block; font-size: 0; height: 0; visibility: hidden }
+.clearfix { zoom: 1 }
+
+
+/*按钮不可点击事件*/
+.disable,.disabled{background:#e5e5e5 !important; color:#999 !important;}
+
+/*边框样式*/
+.b-n { border: none !important}
+.b-r-0 { border-right: 0px}
+.b-r-1 { border-right: 1px}
+.b-l-0 { border-left: 0px}
+.b-l-1 { border-left: 1px}
+.b-t-0 { border-top: 0px}
+.b-t-1 { border-top: 1px}
+.b-b-0 { border-bottom: 0px }
+.b-b-1 { border-bottom: 1px;}
+/*margin样式*/
+.m-t-0 { margin-top: 0px !important;}
+.m-t-5 { margin-top: 5px !important}
+.m-t-10 { margin-top: 10px !important}
+.m-t-50{ margin-top:50px !important}
+.m-r-10 { margin-right: 10px !important}
+.m-r-30 { margin-right: 30px !important}
+.m-b-50 { margin-bottom:50px !important}
+/*padding样式*/
+.p-l-20 { padding-left: 20px!important }
+/*空白位置*/
+.blank-div { height:10px; background: #f3f5f7; width: 100%; clear: both; }
+.hide { display: none; }
+.show { display: block }
+
+/*弹出层显示时候，遮罩层底部是可以滑动的，给body一个高度，阻止滑动*/
+body.visibly,html.visibly{position: fixed;left: 0;top: 0; right:0;margin:auto;width: 100%; z-index:1;height:100%;overflow:hidden;}
