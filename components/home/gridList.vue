@@ -1,6 +1,6 @@
 <template>
   <div class="grid-list m-t-10">
-    <grid :show-lr-borders="false" :show-vertical-dividers="false" :cols="5">
+    <grid :no-border="true" :show-lr-borders="false" :show-vertical-dividers="false" :cols="5">
       <grid-item :label="item.title" v-for="(item,index) in list" :key="index">
         <img slot="icon" :src="item.url">
       </grid-item>
@@ -22,5 +22,9 @@ export default {
 <style lang="less" scoped>
 .grid-list {
   background-color: #fff;
+  padding: 10px 0;
+  a{
+    color: #222 !important;
+  }
 }
 </style>

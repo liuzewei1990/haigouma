@@ -1,6 +1,6 @@
 <template>
     <div class="common-copyright">
-        Copyright © 2004-2018 京东JD.com 版权所有
+        Copyright © 2004-2018 海购马 版权所有
     </div>
 </template>
 

@@ -13,13 +13,23 @@ export default {
 </script>
 
 <style lang="less" scoped>
+
+  @import "../../styles/weui/base/mixin/setOnepx.less";
+
 .common-footer-links {
   box-sizing: border-box;
-  border-bottom: 1px solid #e5e5e5;
-  border-top: 1px solid #e5e5e5;
+  position: relative;
   padding: 4.26667vw 5.33333vw;
   list-style: none;
   display: flex;
+
+  &::before{
+    .setTopLine();
+  }
+
+  &::after{
+    .setBottomLine();
+  }
   li {
     text-align: center;
     flex: 1;

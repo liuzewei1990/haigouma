@@ -33,7 +33,7 @@ export default {
 
 <style lang="less">
 @import "./vux-tabbar.less";
-@import "../styles/reddot.less";
+@import "../../styles/reddot.less";
 
 .weui-tabbar__icon {
   position: relative;

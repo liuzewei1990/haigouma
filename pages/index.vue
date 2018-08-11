@@ -1,11 +1,22 @@
 <!--  -->
 <template>
   <div>
+
+    <!-- banner -->
     <Banner :list="imgList"></Banner>
+
+    <!-- 分类 -->
     <GridList :list="gridList"></GridList>
+
+    <!-- 商品列表 -->
     <GoodList :list="goods"></GoodList>
+
+    <!-- 商品列表 -->
     <GoodList :list="goods"></GoodList>
+
+    <!-- 底部导航 -->
     <Footer></Footer>
+
   </div>
 </template>
 

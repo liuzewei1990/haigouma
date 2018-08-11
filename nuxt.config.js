@@ -12,10 +12,14 @@ module.exports = {
     ]
   },
   css: [
-    { src: '~/assets/css/common.css' }
+    { src: '~/assets/css/common.css' },
+    // { src: '~/assets/styles/index.less' },
   ],
   loading: { color: '#3B8070' },
-
+  plugins: [
+    //引入vue-svg-icon解决方案 操作说明地址：https://www.npmjs.com/package/vue-svg-icon#chineseversion
+    { src: '~/plugins/vue-svg-icon.js', ssr: true }
+  ],
   build: {
     extend(config, { isDev, isClient }) {
       if (isDev && isClient) {

@@ -2,7 +2,8 @@
   <div
     class="weui-grids"
     :class="{
-      'vux-grid-no-lr-borders': !showLrBorders
+      'vux-grid-no-lr-borders': !showLrBorders,
+      'no-border':noBorder
     }">
     <slot></slot>
   </div>
@@ -38,6 +39,10 @@ export default {
     showVerticalDividers: {
       type: Boolean,
       default: true
+    },
+    noBorder:{
+      type:Boolean,
+      default:false
     }
   },
   computed: {
@@ -59,6 +64,26 @@ export default {
   &:after {
     display: none;
   }
+}
+
+.no-border{
+    &::before{
+      display: none;
+    }
+
+    &:after {
+      display: none;
+    }
+  .weui-grid{
+    &::before{
+      display: none;
+    }
+
+    &:after {
+      display: none;
+    }
+  }
+
 }
 
 </style>

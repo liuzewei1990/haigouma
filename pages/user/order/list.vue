@@ -1,13 +1,13 @@
 <template>
-    <div>user</div>
+  <div>用户订单列表</div>
 </template>
 
 <script>
 export default {
-    layout: "tabbar"
 
 }
 </script>
 
 <style>
+
 </style>
