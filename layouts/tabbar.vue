@@ -39,6 +39,6 @@ export default {
 
 <style lang="less" scoped>
 .container {
-  padding-bottom: 50px;
+  padding-bottom: 53px;
 }
 </style>

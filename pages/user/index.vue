@@ -1,7 +1,7 @@
 <template>
     <div>
       <!-- 用户信息 -->
-      <Header></Header>
+      <UserHeader></UserHeader>
 
       <!-- 用户订单模块 -->
       <UserOrder></UserOrder>
@@ -16,19 +16,19 @@
 
       <br>
       <!-- 底部footer -->
-      <Footer></Footer>
+      <UserFooter></UserFooter>
     </div>
 </template>
 
 <script>
-import Header from "~/components/user/header.vue"
+import UserHeader from "~/components/user/user-header.vue"
 import UserOrder from "~/components/user/user-order.vue"
 import UserMoney from "~/components/user/user-money.vue"
 import UserTool from "~/components/user/user-tool.vue"
-import Footer from "~/components/user/footer.vue"
+import UserFooter from "~/components/user/user-footer.vue"
 export default {
     layout: "tabbar",
-    components:{Header,UserOrder,UserMoney,UserTool,Footer}
+    components:{UserHeader,UserOrder,UserMoney,UserTool,UserFooter}
 
 }
 </script>

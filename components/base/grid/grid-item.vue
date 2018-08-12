@@ -42,9 +42,14 @@ export default {
     },
     style () {
       const column = this.$parent.column
-      if (!column || column === 3) {
+      // if (!column || column === 3) {
+      //   return
+      // }
+
+      if (!column) {
         return
       }
+
       const styles = {}
       styles.width = `${100 / column}%`
       return styles
@@ -53,7 +58,7 @@ export default {
   methods: {
     onClick () {
       this.$emit('on-item-click')
-      go(this.link, this.$router)
+      // go(this.link, this.$router)
     }
   },
   data () {

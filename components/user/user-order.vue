@@ -16,7 +16,7 @@
 <script>
 
 import Ucell from '~/components/base/u-cell'
-import { Grid, GridItem } from "~/components/base/grid";
+import { Grid, GridItem } from "~/components/base/grid"
 export default {
   components:{Ucell,Grid,GridItem}
 }

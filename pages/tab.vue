@@ -9,7 +9,7 @@
 
 export default {
   // props: [],
-  // layout: "default",
+  layout: "tabbar",
   // asyncData(context) { },//最重要的一个键, 支持 异步数据处理，另外该方法的第一个参数为当前页面组件的 上下文对象。
   // fetch() { },//用于在渲染页面之前获取数据填充应用的状态树（store）。不同的是 fetch 方法不会设置组件的数据
   // head() { },//配置当前页面的 Meta 标签

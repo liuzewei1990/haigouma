@@ -3,7 +3,7 @@
     <Ucell title="我的钱包" :borderLine="true" :isLink="false"><span slot="desc"></span></Ucell>
 
     <grid :no-border="true" :cols="4">
-      <grid-item label="余额"> <em slot="icon" class="money-icon p-t-10">222元</em> </grid-item>
+      <grid-item label="余额" @on-item-click="toUrl"> <em slot="icon" class="money-icon p-t-10">222元</em> </grid-item>
       <grid-item label="积分"> <em slot="icon" class="money-icon p-t-10">2</em> </grid-item>
       <grid-item label="红包"> <em slot="icon" class="money-icon p-t-10">0</em> </grid-item>
       <grid-item label="付款"> <icon class="tool-icon p-t-10" slot="icon" name="tool-3" scale="2.5" ></icon> </grid-item>
@@ -21,6 +21,12 @@ export default {
   data(){
     return{
 
+    }
+  },
+
+  methods:{
+    toUrl(){
+      window.location.href='/vip.1.html?a=2222'
     }
   }
 }

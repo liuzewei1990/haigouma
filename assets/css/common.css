@@ -39,7 +39,7 @@ a.react, label.react { display: block; color: inherit; height: 100%; }
 .single-line { display:block;position: relative;-webkit-box-flex: 1;box-flex: 1; overflow: hidden;color: #fff; }
 /*css初始值*/
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { margin: 0; padding: 0; border: 0; outline: none;}
-body { margin: 0 auto; font-size: 14px;background-color:#f2f2f2;  color: #757575; min-width: 320px; max-width:640px; }
+body { margin: 0 auto; font-size: 14px;background-color:#f3f5f7;  color: #757575; min-width: 320px; max-width:640px; }
 img { border: 0px }
 a { color: #999; text-decoration: none;  blr: expression(this.onFocus=this.blur()); outline: none;/*-webkit-tap-highlight-color: rgba(0, 0, 0, 0);*/}
 a:active { star: expression_r(this.onFocus=this.blur());}
@@ -71,14 +71,35 @@ input:-moz-placeholder {color:#999;}
 .disable,.disabled{background:#e5e5e5 !important; color:#999 !important;}
 
 /*margin样式*/
+.m-0{ margin:0px !important }
+.m-5{ margin:5px !important }
+.m-10{ margin:10px !important }
+.m-15{ margin:15px !important }
+.m-20{ margin:20px !important }
+.m-25{ margin:25px !important }
+.m-30{ margin:30px !important }
+
 .m-t-0 { margin-top: 0px !important;}
 .m-t-5 { margin-top: 5px !important}
 .m-t-10 { margin-top: 10px !important}
-.m-t-50{ margin-top:50px !important}
+.m-t-15 { margin-top: 15px !important}
+.m-t-20 { margin-top: 20px !important}
+.m-t-25 { margin-top: 25px !important}
+.m-t-30 { margin-top: 30px !important}
+
 .m-r-10 { margin-right: 10px !important}
 .m-r-30 { margin-right: 30px !important}
 .m-b-50 { margin-bottom:50px !important}
+
 /*padding样式*/
+.p-0{ padding:0px !important }
+.p-5{ padding:5px !important }
+.p-10{ padding:10px !important }
+.p-15{ padding:15px !important }
+.p-20{ padding:20px !important }
+.p-25{ padding:25px !important }
+.p-30{ padding:30px !important }
+
 .p-l-20 { padding-left: 20px!important }
 
 .p-t-5 { padding-top: 5px!important }
