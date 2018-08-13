@@ -6,19 +6,17 @@
             <span class="header-tab">规格</span>
         </Xheader>
 
-        <div class="m-t-header"></div>
+        <div class="m-t-header" style="height:10px;background:#fff;"></div>
 
         <!-- 商品banner -->
-        <Swiper class="m-t-10" :list="list" :loop="true" :auto="true" height="320px" :show-desc-mask="false" :show-dots="false"></Swiper>
+        <Swiper :list="list" :loop="true" :auto="true" height="320px" :show-desc-mask="false" :show-dots="false"></Swiper>
 
         <!-- 商品标题 -->
         <ProductDetailTitle></ProductDetailTitle>
 
-        <SkuModule ref="SkuModule"></SkuModule>
-
         <!-- 规格选择 -->
         <Ucell class="m-t-10" title="已选：" :borderLine="true" :topLine="true" :isLink="true" @click.native="SkuModuleOpen">
-            <span slot="desc">白色 公开版公开版公开版</span>
+            <span slot="desc">{{skuResultStr}}</span>
         </Ucell>
 
         <!-- 商品规格参数 -->
@@ -29,10 +27,13 @@
 
         <!-- 大家都在看 -->
         <LoadMore tip="大家都在看" :showLoading="false"></LoadMore>
+
         <ProductList></ProductList>
 
         <!-- footer -->
         <CommonFooterCopyright></CommonFooterCopyright>
+
+        <SkuModule ref="SkuModule" @SkuResult="SkuResult"></SkuModule>
     </div>
 </template>
 <script>
@@ -54,6 +55,7 @@ export default {
     asyncData(context) { },
     data() {
         return {
+            skuResultStr:"请选择",
             list: [
                 {
                     url: 'javascript:',
@@ -66,6 +68,13 @@ export default {
     methods: {
         SkuModuleOpen() {
             console.log(this.$refs.SkuModule.open())
+        },
+        //Sku选择结果
+        SkuResult(skuResult){
+          this.skuResultStr = "";
+          for(let key in skuResult){
+            this.skuResultStr += ` ${skuResult[key]}`;
+          }
         }
     }
 }

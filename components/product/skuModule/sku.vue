@@ -1,8 +1,10 @@
 <template lang="html">
   <div class="skuModule">
     <color-item :colorType="this.skuType['color']" @color-change="colorChangeHandler"></color-item>
-    <size-item :sizeType="this.skuType['size']" @size-change="sizeChangeHandler"></size-item>
-    <config-item :configType="this.skuType['config']" @config-change="configChangeHandler"></config-item>
+    <color-item :colorType="this.skuType['size']" @color-change="sizeChangeHandler"></color-item>
+    <color-item :colorType="this.skuType['config']" @color-change="configChangeHandler"></color-item>
+    <!-- <size-item :sizeType="this.skuType['size']" @size-change="sizeChangeHandler"></size-item> -->
+    <!-- <config-item :configType="this.skuType['config']" @config-change="configChangeHandler"></config-item> -->
   </div>
 </template>
 
@@ -24,14 +26,13 @@ export default {
             //此数据为后台传回来的某商品的sku数据，一般在created时向后台发起请求获取，此处模拟
             skuList: [
                 { 'color': '黑色', 'size': '13.3英寸', 'config': 'Core i5' },
-                { 'color': '银色', 'size': '13.3英寸', 'config': 'Core i5' },
-                { 'color': '深空灰色', 'size': '13.3英寸', 'config': 'Core i5' },
+                { 'color': '银色', 'size': '13.3英寸', 'config': 'Core i7' },
+                { 'color': '深空灰色', 'size': '13.3英寸', 'config': 'Core i3' },
                 { 'color': '灰色', 'size': '13.3英寸', 'config': 'Core i5' },
-                { 'color': '银色', 'size': '13.3英寸', 'config': 'Core i5/8G内存/256G闪存' },
-                { 'color': '银色', 'size': '15.4英寸', 'config': '512闪存/Multi-Touch Bar' },
-                { 'color': '深空灰色', 'size': '13.3英寸', 'config': '256闪存/Multi-Touch Bar' },
-                { 'color': '银色', 'size': '13.3英寸', 'config': '512闪存/Multi-Touch Bar' },
-                { 'color': '深空灰色', 'size': '15.4英寸', 'config': '512闪存/Multi-Touch Bar' }
+                { 'color': '银色', 'size': '15.4英寸', 'config': '512闪存' },
+                { 'color': '深空灰色', 'size': '13.3英寸', 'config': '256闪存' },
+                { 'color': '银色', 'size': '13.3英寸', 'config': '512闪存' },
+                { 'color': '深空灰色', 'size': '15.4英寸', 'config': '512闪 Bar' }
             ],
             //存储类别
             skuType: {},
@@ -178,6 +179,8 @@ export default {
 
 <style lang="css">
 .skuModule {
-  width: 100%;
+    padding: 0 15px;
+    background: #ffffff;
+    overflow: auto;
 }
 </style>
