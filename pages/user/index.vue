@@ -1,22 +1,22 @@
 <template>
     <div>
-      <!-- 用户信息 -->
-      <UserHeader></UserHeader>
+        <!-- 用户信息 -->
+        <UserHeader></UserHeader>
 
-      <!-- 用户订单模块 -->
-      <UserOrder></UserOrder>
+        <!-- 用户订单模块 -->
+        <UserOrder></UserOrder>
 
-      <br>
-      <!-- 用户钱包模块 -->
-      <UserMoney></UserMoney>
+        <br>
+        <!-- 用户钱包模块 -->
+        <UserMoney></UserMoney>
 
-      <br>
-      <!-- 用户工具箱 -->
-      <UserTool></UserTool>
+        <br>
+        <!-- 用户工具箱 -->
+        <UserTool></UserTool>
 
-      <br>
-      <!-- 底部footer -->
-      <UserFooter></UserFooter>
+        <br>
+        <!-- 底部footer -->
+        <UserFooter></UserFooter>
     </div>
 </template>
 
@@ -28,7 +28,7 @@ import UserTool from "~/components/user/user-tool.vue"
 import UserFooter from "~/components/user/user-footer.vue"
 export default {
     layout: "tabbar",
-    components:{UserHeader,UserOrder,UserMoney,UserTool,UserFooter}
+    components: { UserHeader, UserOrder, UserMoney, UserTool, UserFooter }
 
 }
 </script>
