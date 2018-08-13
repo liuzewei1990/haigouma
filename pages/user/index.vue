@@ -1,22 +1,22 @@
 <template>
     <div>
         <!-- 用户信息 -->
-        <UserHeader></UserHeader>
+        <!-- <UserHeader></UserHeader> -->
 
         <!-- 用户订单模块 -->
-        <UserOrder></UserOrder>
+        <!-- <UserOrder></UserOrder> -->
 
         <br>
         <!-- 用户钱包模块 -->
-        <UserMoney></UserMoney>
+        <!-- <UserMoney></UserMoney> -->
 
         <br>
         <!-- 用户工具箱 -->
-        <UserTool></UserTool>
+        <!-- <UserTool></UserTool> -->
 
         <br>
         <!-- 底部footer -->
-        <UserFooter></UserFooter>
+        <!-- <UserFooter></UserFooter> -->
     </div>
 </template>
 

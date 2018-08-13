@@ -66,6 +66,10 @@ input:-moz-placeholder {color:#999;}
 .clearfix:after { clear: both; content: " "; display: block; font-size: 0; height: 0; visibility: hidden }
 .clearfix { zoom: 1 }
 
+/* 全局header高度 */
+.m-t-header{
+    margin-top: 46px;
+}
 
 /*按钮不可点击事件*/
 .disable,.disabled{background:#e5e5e5 !important; color:#999 !important;}
