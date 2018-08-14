@@ -32,7 +32,7 @@ export default {
                 { 'color': '银色', 'size': '15.4英寸', 'config': '512闪存' },
                 { 'color': '深空灰色', 'size': '13.3英寸', 'config': '256闪存' },
                 { 'color': '银色', 'size': '13.3英寸', 'config': '512闪存' },
-                { 'color': '深空灰色', 'size': '15.4英寸', 'config': '512闪 Bar' }
+                { 'color': '深空灰色', 'size': '15.4英寸', 'config': '512闪 Bar' },
             ],
             //存储类别
             skuType: {},
@@ -179,8 +179,9 @@ export default {
 
 <style lang="css">
 .skuModule {
-    padding: 0 15px;
-    background: #ffffff;
-    overflow: auto;
+  padding: 0 15px;
+  max-height: 300px;
+  background: #ffffff;
+  overflow-y: scroll;
 }
 </style>

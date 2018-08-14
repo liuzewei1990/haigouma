@@ -33,6 +33,9 @@
         <!-- footer -->
         <CommonFooterCopyright></CommonFooterCopyright>
 
+        <!-- footerBar模块 -->
+        <ProductFooterBar></ProductFooterBar>
+        <!-- Sku模块 -->
         <SkuModule ref="SkuModule" @SkuResult="SkuResult"></SkuModule>
     </div>
 </template>
@@ -46,16 +49,17 @@ import ProductDetail from "~/components/product/product-detail"
 import LoadMore from "~/components/base/load-more"
 import ProductList from '~/components/product/product-list.vue'
 import CommonFooterCopyright from '~/components/base/common-footer/footer-copyright.vue'
+import ProductFooterBar from '~/components/product/product-footer-bar.vue'
 
 
 import SkuModule from '~/components/product/skuModule/index.vue'
 export default {
-    components: { Xheader, Swiper, ProductDetailTitle, Ucell, ProductDetailAttribute, ProductDetail, LoadMore, ProductList, CommonFooterCopyright, SkuModule },
+    components: { Xheader, Swiper, ProductDetailTitle, Ucell, ProductDetailAttribute, ProductDetail, LoadMore, ProductList, CommonFooterCopyright, SkuModule, ProductFooterBar },
     head() { return {} },
     asyncData(context) { },
     data() {
         return {
-            skuResultStr:"请选择",
+            skuResultStr: "请选择",
             list: [
                 {
                     url: 'javascript:',
@@ -70,11 +74,11 @@ export default {
             console.log(this.$refs.SkuModule.open())
         },
         //Sku选择结果
-        SkuResult(skuResult){
-          this.skuResultStr = "";
-          for(let key in skuResult){
-            this.skuResultStr += ` ${skuResult[key]}`;
-          }
+        SkuResult(skuResult) {
+            this.skuResultStr = "";
+            for (let key in skuResult) {
+                this.skuResultStr += ` ${skuResult[key]}`;
+            }
         }
     }
 }
